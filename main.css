@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+/* CSS FOR HEADER */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    padding: 1% 9%;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    line-height: 39px;
+}
+.nav_left{
+    display: flex;
+    align-items: flex-start;
+}
+.nav_left img{
+    padding-top: 2px;
+    margin-right: 5px;
+}
+.nav_left span{
+    margin-right: 9%;
+    font-weight: bold;
+}
+.nav_left li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.nav_left li a{
+    color: black;
+}
+.nav_left .nav_button{
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    padding: 5px 8px;
+    line-height: 10px;
+}
+.nav_left .nav_button img{
+    height: 28px;
+    width: 30px;
+}
+.nav_left .nav_button div{
+    display: inline-block;
+    line-height: 1;
+}
+/* CSS FOR BANNER */
+#banner{
+    width: 100%;
+    height: 100vh;
+    background: url(assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 2%;
+}
+#banner .content{
+    position: absolute;   
+    top: 30%;
+    left: 10%;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 90px;
+    letter-spacing: 1px;
+}
+#banner .content .btn{
+    background-color: #8C30F5;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 32px;
+    margin-top: 10px;
+}
+#banner .image{
+    position: absolute;
+    top: 23%;
+    right: 16%;
+}
+#banner .image .img1{
+    z-index: 999;
+    position: absolute;
+    height: 104%;
+    right: -15px;
+    top: -13px;
+}
+#banner .image .img2{
+    width: 100%;
+    height: 450px;
+    right: -15px;
+    top: -13px;
+    box-shadow: 10px 5px 35px black;
+}
+.section2>.slider{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(192, 204, 218, 0.6);
+    border-top: 1px solid rgba(192, 204, 218, 0.6);
+    height : 122px;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+.slide-img{
+    margin: auto;
+}
+.prev-arrow,.next-arrow{
+    cursor: pointer;
+}
+#features{
+    text-align: center;
+    padding: 2% 6%;
+}
+#features .heading{
+    padding: 0 30%;
+}
+#features .heading h1{
+    font-size: 3rem;
+}
+#features .row {
+    display: flex;
+    display: -webkit-flex;
+    padding: 3% 6%;
+    gap: 2%;
+}
+#features .row .col h2{
+    margin: 10px 0;
+}
+#features .row .col img{
+    height: 40px;
+    width: 40px;
+}
+#features p{
+    margin-top: 12px;
+    line-height: 25px;
+}
+#testimonial{
+    width: 100%;
+    height: auto;
+    background-color: #D5FAFC;
+}
+#testimonial .grid-container{
+    display: flex;
+    display: -webkit-flex;/* for safari browser */
+    flex-wrap: wrap;
+    padding: 10% 15%;
+}
+#testimonial .grid-container .grid-item{
+    height: auto;
+    flex: 50%;
+    padding: 0 2%;
+    text-align: start;
+    position: relative;
+}
+#testimonial .grid-container .grid-item h1{
+    font-weight: 900;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+#testimonial .grid-container .grid-item .quotes{
+    display: block;
+    color:#A3EAEE;
+    font-size: 180px;
+    position: absolute;
+    top: -12%;
+    left: -4%;
+}
+#testimonial .grid-container .grid-item p{
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+#testimonial .grid-container .grid-item .testimonials{
+    background-color: white;
+    border-radius: 6px;
+    padding: 8% 6%;
+    margin-top: 8%;
+}
+#testimonial .grid-container .grid-item .testimonials img{
+    padding: 10px 0;
+}
+#testimonial .grid-container .grid-item .testimonials h4{
+    padding-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#testimonial .grid-container .grid-item .testimonials h5{
+    padding-left: 20px;
+    margin-top: 5px;
+    color: gray;
+    font-size: 12px;
+}
+#achievements{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 5% 0;
+}
+#achievements .box1{
+    flex:50%;
+    height: auto;
+    text-align: center;
+    font-size: 35px;
+}
+#achievements .box1 h1{
+    font-size: 4rem;
+}
+#achievements .box1 p{
+    font-size: 19px;
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+}
+#achievements .box2{
+    flex:50%;
+    height: auto;
+}
+#achievements .box2 .data{
+    display: inline-block;
+    padding: 10px 5px;
+    width: 38%;
+}
+
+#achievements .box2 .data div{
+    display: inline-block;
+    text-align: left;
+}
+#achievements .box2 .data h2{
+    font-size: 27px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+#achievements .box2 .data h4{
+    font-size: 14px;
+    margin-left: 10px;
+    color: grey;
+}
+#headline{
+    display: flex;
+    padding: 4% 15%;
+    gap: 6%;
+}
+#headline .head1{
+    flex: 50%;
+    height: 360px;
+    width: 100%;
+    padding-top: 4%;
+    text-align: center;
+    background-color: #F1E4FF;
+    border-radius: 8px;
+}
+#headline .head1 img{
+    height: 100%;
+    width: 70%;
+}
+#headline .head2{
+    flex: 50%;
+    height: auto;
+    width: 100%;
+    padding: 8% 0;
+}
+#headline .head2 h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+#headline .head2 p{
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#headline .head2 a{
+    color: #A156F6;
+}
+footer{
+    background-color: black;
+    height: auto;
+    padding: 5% 13%;
+}
+footer .container{
+    display: flex;
+    display: -webkit-flex;
+}
+footer .container .element1{
+    align-items: flex-start;
+    flex: 80%;
+}
+footer .container .element1 ul{
+    display: flex;
+    margin-top: 20px;
+}
+footer .container .element1 li{
+    padding-right: 30px;
+}
+footer .container li a{
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+footer .container p{
+    font-size: 12px;
+    margin-top: 25px;
+    color: white;
+}
+footer .container .element2{
+    flex: 20%;
+}
+footer .container .element2 h2{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+footer .container .element2 h4,h6{
+    color: white;
+}
+footer .container .element2 img{
+    height: 28px;
+    width: 30px;
+}
+footer .button{
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 75%;
+    cursor: pointer;
+}
+footer .container .element2 .button div{
+    display: inline-block;
+}
+
+/* Media queries for different break points */
+
+@media only screen and (max-width: 600px){
+    header{
+        height: auto;
+        background-color: black;
+        color: white;
+        position: static;
+    }
+    header .nav_left{
+        display: block;
+    }
+    header .nav_left li{
+        padding: 0 5px;
+    }
+    header ,.nav_left li a{
+        color: white;
+    }
+    #banner{
+        height: 80vh;
+    }
+    #banner .image{
+        display: none;
+    }
+    #achievements{
+        display: block;
+        text-align: center;
+    }
+    #achievements .box1 h1{
+        font-size: 2.5rem;
+    }
+    #achievements .box1 p{
+        margin-bottom: 30px;
+    }
+    #achievements .data{
+        text-align: left;
+        margin-left:20px ;
+    }
+    #features .heading{
+        padding: 0 8%!important;
+    }
+    #features .row{
+        padding: 4% 6%;
+        display: block;
+    }
+    #features .col{
+        margin-bottom: 25px!important;
+    }
+    #testimonial .grid-container .grid-item .testimonials{
+        width: 100%!important;
+    }
+    #headline{
+        display: block;
+    }
+    footer{
+        display: block;
+        padding: 5% 10%;
+    }
+    footer .container{
+        display: block;
+    }
+    footer .container .element1 ul{
+        display: block;
+    }
+    footer .container .element1 li{
+        padding-bottom: 15px;
+    }
+    footer .container p{
+        margin: 15px 0;
+    }
+    footer .container .button{
+        width: 44%;
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        height: auto;
+        background-color: black;
+        color: white;
+        position: static;
+    }
+    header .nav_left{
+        display: block;
+    }
+    header .nav_left li{
+        padding: 0 10px;
+    }
+    header ,.nav_left li a{
+        color: white;
+    }
+    #banner{
+        height: 90vh;
+    }
+    #banner .content{
+        font-size: 2rem!important;
+        line-height: 70px!important;
+        top: 35%;
+        left: 6%;
+    }
+    #banner .image{
+        right: 8%;
+        top: 29%;
+    }
+    #achievements{
+        display: block;
+        text-align: center;
+    }
+    #achievements .box1 h1{
+        font-size: 2.5rem;
+    }
+    #achievements .box1 p{
+        margin-bottom: 30px;
+    }
+    #achievements .data{
+        text-align: left;
+        margin-left:20px ;
+    }
+    #features{
+        padding: 2% 0!important;
+    }
+    #features .heading{
+        padding: 0 8%!important;
+    }
+    #features .row{
+        padding: 4% 6%;
+    }
+    #features .col{
+        margin-bottom: 25px!important;
+    }
+    #testimonial .grid-container .grid-item .testimonials{
+        width: 100%!important;
+    }
+    #headline{
+        display: block;
+    }
+    footer{
+        display: block;
+        padding: 5% 10%;
+    }
+    footer .container{
+        display: block;
+    }
+    footer .container .element1 ul{
+        display: block;
+    }
+    footer .container .element1 li{
+        padding-bottom: 15px;
+    }
+    footer .container p{
+        margin: 15px 0;
+    }
+    footer .container .button{
+        width: 44%;
+    }
+}
+@media screen and (max-width: 1100px){
+    header{
+        padding: 1% 5%;
+    }
+    .nav_left span{
+        margin-right: 5%;
+    }
+    .nav_left .nav_button{
+        padding: 5px 5px;
+    }
+    #banner .content{
+        font-size: 2.5rem;
+        line-height: 80px;
+        letter-spacing: 0px;
+    }
+    #banner .image{
+        right: 10%;
+    }
+    #features{
+        padding: 2% 5%;
+    }
+    #features .heading{
+        padding: 0 22%;
+    }
+    #features .heading h1{
+        font-size: 3rem;
+    }
+    #features .row{
+        padding: 4% 6%;
+    }
+    #testimonial .grid-container{
+        padding: 10% 5%;
+    }
+    #testimonial .grid-container .grid-item .quotes{
+        top: -11%;
+        left: -4%;
+    }
+    #achievements{
+        padding: 5% 1%;
+    }
+    #achievements .box2 .data{
+        width: 43%;
+    }
+}
